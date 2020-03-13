@@ -6,12 +6,11 @@ export default class Playing extends Phaser.Scene {
 		super('playGame');
 	}
 	create() {
-		this.add.text(20, 20, 'Playing game');
 		this.background = this.add.tileSprite(0, 0, config.width, config.height, 'background');
 		this.background.setOrigin(0, 0);
 
 		this.hero = this.physics.add.image(-config.width, config.height / 2, 'hero');
-		// this.hero.play('thrust');
+
 		this.cursorKeys = this.input.keyboard.createCursorKeys();
 
 		this.hero.setCollideWorldBounds(true);
@@ -58,11 +57,6 @@ export default class Playing extends Phaser.Scene {
 			delay: 0
 		};
 		this.music.play(musicConfig);
-
-		// //maybe try this
-		// // const graphics = this.add.graphics();
-		// // graphics.fillStyle("Black");
-		// // graphics.fillRect(0,0,config.width,20);
 
 		this.score = 0;
 		this.scoreLabel = this.add.bitmapText(15, 10, 'pixelFont', 'SCORE', 48);
