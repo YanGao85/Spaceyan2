@@ -1,0 +1,7 @@
+NPM INSTALL
+
+NPM START
+
+LOCALHOST 8080
+
+CLick on public folder

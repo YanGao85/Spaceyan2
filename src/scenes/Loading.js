@@ -42,11 +42,5 @@ export default class Loading extends Phaser.Scene {
 			repeat: 0,
 			hideOnComplete: true
 		});
-		// 	this.anims.create({
-		// 		key: 'thrust',
-		// 		frames: this.anims.generateFrameNumbers('player'),
-		// 		frameRate: 20,
-		// 		repeat: -1
-		// 	});
 	}
 }
